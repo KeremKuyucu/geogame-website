@@ -9,7 +9,7 @@ export function PhoneSlideshow() {
   // Array of 8 placeholder images
   const slides = Array.from({ length: 7 }, (_, i) => ({
     id: i + 1,
-    src: `/screenshots/screen${i + 1}.png`,
+    src: `/screenshots/screen${i + 1}.jpg`,
   }))
   
   useEffect(() => {
