@@ -239,15 +239,6 @@ export default function Home() {
 // Update the GameModeCard component to open GitHub
 function GameModeCard({ icon, title, description }) {
   const { toast } = useToast()
-
-  const handlePlay = () => {
-    toast({
-      title: "Oyun Modu",
-      description: `${title} modu başlatılıyor...`,
-    })
-    window.open("https://github.com", "_blank")
-  }
-
   // Rest of the component remains the same
 
   return (
