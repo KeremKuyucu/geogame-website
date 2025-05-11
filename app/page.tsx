@@ -239,6 +239,11 @@ export default function Home() {
 // Update the GameModeCard component to open GitHub
 function GameModeCard({ icon, title, description }) {
   const { toast } = useToast()
+
+  const handlePlay = () => {
+
+  }
+
   // Rest of the component remains the same
 
   return (
