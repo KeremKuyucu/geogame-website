@@ -152,51 +152,42 @@ export default function Home() {
         {/* Stats Section */}
         <section id="stats" className="py-16 md:py-24 bg-white">
           <div className="container">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-items-center">
-              <div className="w-full max-w-xl text-center md:text-left">
-                <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
-                  <h2 className="text-3xl md:text-4xl font-bold">İstatistiklerinizi Takip Edin</h2>
-                  <Badge
-                    variant="outline"
-                    className="bg-yellow-100 text-yellow-800 border-yellow-300 text-xs font-medium px-2.5 py-0.5"
-                  >
-                    Yakında
-                  </Badge>
-                </div>
-                <p className="text-lg text-muted-foreground mb-6">
-                  GeoGame ile coğrafya bilginizi geliştirirken ilerlemenizi de takip edin. Hangi ülkeleri doğru
-                  bildiğinizi, hangi bölgelerde daha fazla çalışmanız gerektiğini görün.
-                </p>
-                <ul className="space-y-4 text-left md:text-left">
-                  {[
-                    "Doğru bildiğiniz ülkelerin listesi",
-                    "Bölgelere göre başarı oranınız",
-                    "Günlük, haftalık ve aylık ilerleme grafikleri",
-                    "Arkadaşlarınızla karşılaştırmalı istatistikler",
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-2">
-                      <div className="rounded-full bg-primary/20 p-1 mt-0.5">
-                        <ChevronRight className="h-4 w-4 text-primary" />
-                      </div>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Button className="mt-6" onClick={() => handleButtonClick("İstatistikler görüntüleniyor...")}>
-                  İstatistiklerinizi Görün
-                </Button>
+            <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
+              <div className="flex items-center gap-3 mb-4">
+                <h2 className="text-3xl md:text-4xl font-bold">İstatistiklerinizi Takip Edin</h2>
+                <Badge
+                  variant="outline"
+                  className="bg-yellow-100 text-yellow-800 border-yellow-300 text-xs font-medium px-2.5 py-0.5"
+                >
+                  Yakında
+                </Badge>
               </div>
-
-              <div className="relative w-full h-full flex justify-center items-center">
-                <div className="absolute -z-10 -right-4 -bottom-4 h-[300px] w-[300px] rounded-full bg-primary/20 blur-3xl" />
-                {/* Buraya istersen bir görsel veya animasyon eklersin */}
-                <div className="w-64 h-64 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400">
-                  Görsel Gelecek
-                </div>
-              </div>
+              <p className="text-lg text-muted-foreground mb-6">
+                GeoGame ile coğrafya bilginizi geliştirirken ilerlemenizi de takip edin. Hangi ülkeleri doğru
+                bildiğinizi, hangi bölgelerde daha fazla çalışmanız gerektiğini görün.
+              </p>
+              <ul className="space-y-4 text-left w-full">
+                {[
+                  "Doğru bildiğiniz ülkelerin listesi",
+                  "Bölgelere göre başarı oranınız",
+                  "Günlük, haftalık ve aylık ilerleme grafikleri",
+                  "Arkadaşlarınızla karşılaştırmalı istatistikler",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-2">
+                    <div className="rounded-full bg-primary/20 p-1 mt-0.5">
+                      <ChevronRight className="h-4 w-4 text-primary" />
+                    </div>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <Button className="mt-6" onClick={() => handleButtonClick("İstatistikler görüntüleniyor...")}>
+                İstatistiklerinizi Görün
+              </Button>
             </div>
           </div>
         </section>
+
        
       </main>
 
