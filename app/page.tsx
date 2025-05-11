@@ -203,33 +203,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Download Section */}
-        <section id="download" className="py-16 md:py-24 bg-gradient-to-b from-background to-primary/10">
-          <div className="container text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Hemen İndirin</h2>
-            <p className="text-lg text-muted-foreground max-w-[600px] mx-auto mb-8">
-              GeoGame'i indirin, coğrafya bilginizi geliştirin ve dünya hakkında daha fazla şey öğrenin!
-            </p>
-            <div className="flex justify-center gap-4">
-              {/* Update the button in the download section to use the updated function */}
-              <Button
-                size="lg"
-                className="gap-2"
-                onClick={() => handleButtonClick("GitHub'dan indirme başlatıldı!", "https://github.com")}
-              >
-                <Download className="h-5 w-5" /> GitHub'dan İndir
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="gap-2"
-                onClick={() => handleButtonClick("Alternatif indirme seçenekleri gösteriliyor...")}
-              >
-                Alternatif İndirme
-              </Button>
-            </div>
-          </div>
-        </section>
+       
       </main>
 
       <footer className="border-t py-8 md:py-12">
