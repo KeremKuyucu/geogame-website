@@ -22,7 +22,6 @@ export function PhoneSlideshow() {
   }, [slides.length])
 
   return (
-    <div className="relative w-[280px] md:w-[320px] lg:w-[360px] rounded-[40px] bg-black p-2 shadow-xl">
       <div className="rounded-[32px] overflow-hidden bg-white relative h-[640px]">
         {slides.map((slide, index) => (
           <div
@@ -55,6 +54,5 @@ export function PhoneSlideshow() {
           ))}
         </div>
       </div>
-    </div>
   )
 }
