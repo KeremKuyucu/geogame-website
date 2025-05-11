@@ -22,8 +22,8 @@ export function PhoneSlideshow() {
   }, [slides.length])
 
   return (
-    <div className="relative w-[250px] md:w-[320px] lg:w-[360px] rounded-[40px] bg-black p-2 shadow-xl">
-      <div className="rounded-[32px] overflow-hidden bg-white relative h-[640px]">
+    <div className="relative w-[202.5px] md:w-[240px] lg:w-[270px] rounded-[40px] bg-black p-2 shadow-xl">
+      <div className="rounded-[32px] overflow-hidden bg-white relative h-[360px]">
         {slides.map((slide, index) => (
           <div
             key={slide.id}
@@ -33,8 +33,8 @@ export function PhoneSlideshow() {
           >
             <Image
               src={slide.src || "/placeholder.svg"}
-              width={360}
-              height={640}
+              width={202.5}
+              height={360}
               alt={`GeoGame Screenshot ${slide.id}`}
               className="w-full h-full object-cover"
             />
