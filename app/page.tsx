@@ -150,11 +150,11 @@ export default function Home() {
         </section>
 
         {/* Stats Section */}
-        <section id="stats" className="py-16 md:py-24">
+        <section id="stats" className="py-16 md:py-24 bg-white">
           <div className="container">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <div>
-                <div className="flex items-center gap-3 mb-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-items-center">
+              <div className="w-full max-w-xl text-center md:text-left">
+                <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
                   <h2 className="text-3xl md:text-4xl font-bold">İstatistiklerinizi Takip Edin</h2>
                   <Badge
                     variant="outline"
@@ -167,7 +167,7 @@ export default function Home() {
                   GeoGame ile coğrafya bilginizi geliştirirken ilerlemenizi de takip edin. Hangi ülkeleri doğru
                   bildiğinizi, hangi bölgelerde daha fazla çalışmanız gerektiğini görün.
                 </p>
-                <ul className="space-y-4">
+                <ul className="space-y-4 text-left md:text-left">
                   {[
                     "Doğru bildiğiniz ülkelerin listesi",
                     "Bölgelere göre başarı oranınız",
@@ -186,13 +186,17 @@ export default function Home() {
                   İstatistiklerinizi Görün
                 </Button>
               </div>
-              <div className="relative">
+
+              <div className="relative w-full h-full flex justify-center items-center">
                 <div className="absolute -z-10 -right-4 -bottom-4 h-[300px] w-[300px] rounded-full bg-primary/20 blur-3xl" />
+                {/* Buraya istersen bir görsel veya animasyon eklersin */}
+                <div className="w-64 h-64 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400">
+                  Görsel Gelecek
+                </div>
               </div>
             </div>
           </div>
         </section>
-
        
       </main>
 
