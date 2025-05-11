@@ -49,11 +49,11 @@ export default function Home() {
               variant="outline"
               size="sm"
               className="hidden md:flex"
-              onClick={() => handleButtonClick("Giriş sayfasına yönlendiriliyorsunuz...")}
+              onClick={() => window.open("https://geogame-auth.keremkk.com.tr", "_blank")}
             >
               Giriş Yap
             </Button>
-            <Button size="sm" onClick={() => handleButtonClick("İndirme sayfasına yönlendiriliyorsunuz...")}>
+            <Button size="sm" onClick={() => window.open("https://github.com/KeremKuyucu/GeoGame/releases/latest", "_blank")}>
               <Download className="mr-2 h-4 w-4" /> İndir
             </Button>
           </div>
@@ -73,16 +73,8 @@ export default function Home() {
                 oyunudur. Başkentler, bayraklar ve diğer coğrafi bilgilerle kendinizi test edin.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 pt-4">
-                <Button size="lg" className="gap-2" onClick={() => handleButtonClick("Oyun başlatılıyor...")}>
+                <Button size="lg" className="gap-2" onClick={() => window.open("https://github.com/KeremKuyucu/GeoGame/releases/latest", "_blank")}>
                   Hemen Oyna <ChevronRight className="h-4 w-4" />
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="gap-2"
-                  onClick={() => handleButtonClick("Daha fazla bilgi gösteriliyor...")}
-                >
-                  Daha Fazla Bilgi
                 </Button>
               </div>
               <div className="pt-4"></div>
