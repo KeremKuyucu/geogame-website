@@ -252,9 +252,6 @@ function GameModeCard({ icon, title, description }) {
         <div className="mb-4 rounded-full bg-primary/10 w-16 h-16 flex items-center justify-center">{icon}</div>
         <h3 className="text-xl font-bold mb-2">{title}</h3>
         <p className="text-muted-foreground">{description}</p>
-        <Button variant="link" className="mt-4 p-0 h-auto font-medium" onClick={handlePlay}>
-          Oyna <ChevronRight className="ml-1 h-4 w-4" />
-        </Button>
       </CardContent>
     </Card>
   )
