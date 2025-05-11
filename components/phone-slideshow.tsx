@@ -7,11 +7,11 @@ export function PhoneSlideshow() {
   const [currentSlide, setCurrentSlide] = useState(0)
 
   // Array of 8 placeholder images
-  const slides = Array.from({ length: 8 }, (_, i) => ({
+  const slides = Array.from({ length: 7 }, (_, i) => ({
     id: i + 1,
-    src: `/placeholder.svg?height=640&width=360&text=Ekran ${i + 1}`,
+    src: `/screenshots/screen${i + 1}.png`,
   }))
-
+  
   useEffect(() => {
     // Auto-rotate slides every 3 seconds
     const interval = setInterval(() => {
