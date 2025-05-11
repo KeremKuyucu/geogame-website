@@ -19,7 +19,6 @@ export default function Home() {
       title: "Bildirim",
       description: message,
     })
-    window.open(url, "_blank")
   }
 
   return (
@@ -188,15 +187,6 @@ export default function Home() {
                 </Button>
               </div>
               <div className="relative">
-                <div className="relative z-10 rounded-lg overflow-hidden border shadow-lg">
-                  <Image
-                    src="/placeholder.svg?height=600&width=800"
-                    width={800}
-                    height={600}
-                    alt="GeoGame Statistics Dashboard"
-                    className="w-full"
-                  />
-                </div>
                 <div className="absolute -z-10 -right-4 -bottom-4 h-[300px] w-[300px] rounded-full bg-primary/20 blur-3xl" />
               </div>
             </div>
