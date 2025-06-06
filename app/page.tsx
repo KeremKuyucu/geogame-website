@@ -181,7 +181,7 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <Button className="mt-6" onClick={() => window.open("https://geogame-api.keremkk.com.tr", "_blank")}>
+              <Button className="mt-6" onClick={() => window.open("https://geogame-statistics.keremkk.com.tr", "_blank")}>
                 İstatistiklerinizi Görün
               </Button>
             </div>
