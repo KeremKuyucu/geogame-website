@@ -155,12 +155,6 @@ export default function Home() {
             <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
               <div className="flex items-center gap-3 mb-4">
                 <h2 className="text-3xl md:text-4xl font-bold">İstatistiklerinizi Takip Edin</h2>
-                <Badge
-                  variant="outline"
-                  className="bg-yellow-100 text-yellow-800 border-yellow-300 text-xs font-medium px-2.5 py-0.5"
-                >
-                  Yakında
-                </Badge>
               </div>
               <p className="text-lg text-muted-foreground mb-6">
                 GeoGame ile coğrafya bilginizi geliştirirken ilerlemenizi de takip edin. Hangi ülkeleri doğru
